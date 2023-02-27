@@ -9,12 +9,14 @@ import 'package:dropproject/listcardDemo.dart';
 import 'package:dropproject/listdemo.dart';
 import 'package:dropproject/second.dart';
 import 'package:dropproject/snackdemo.dart';
-import 'package:dropproject/stackdemo.dart';
+import 'package:dropproject/tab_in_flutter.dart';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'ListView_with_Bulider.dart';
 import 'Shoppigcard.dart';
+import 'grid_stack.dart';
 import 'gridview_with_count.dart';
 import 'gridwith_extend.dart';
 import 'gridwithbuilder.dart';
@@ -45,7 +47,7 @@ class _MainScreenState extends State<MainScreen> {
   void initState(){
     Timer(Duration(seconds: 5) ,(){
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => Shopping()),
+        MaterialPageRoute(builder: (context) => tabinflutter()),
       );
 
     });
